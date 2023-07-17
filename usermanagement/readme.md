@@ -6,7 +6,7 @@ The User Management API is an HTTP server built using Python Flask. It provides 
 
 - User Authentication (Login) with JWT Token
 - User Registration
-- Listing Users
+- Show Users
 - Adding New Users
 - Removing Users
 
@@ -26,7 +26,7 @@ The User Management API is an HTTP server built using Python Flask. It provides 
 - DELETE /users/remove: Remove a user from the database (Requires JWT token for authorization).
 
 ## Authorization
-For /users, /users/add, and /users/remove endpoints, need to include a valid JWT token in the Authorization header with the 'Bearer' scheme. The token is obtained from the /login endpoint.
+Using JWT token Authorization with 'Bearer' scheme for /users, /users/add, and /users/remove endpoints.
 
 ## Project Setup 
 - Initialize virtualenv 
